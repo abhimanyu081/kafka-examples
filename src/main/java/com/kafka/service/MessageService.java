@@ -17,7 +17,7 @@ public class MessageService {
 		List<Message> msgs = new ArrayList<Message>(randInt);
 		
 		for(int i=0;i<randInt;i++) {
-			Message msg = new Message(String.valueOf(i), new Date(), getRandomDouble(1, 2000));
+			Message msg = new Message(String.valueOf(i), new Date(), getRandomDouble(1, 2000),getRandomDouble(-100, 100));
 			msgs.add(msg);
 		}
 		return msgs;
